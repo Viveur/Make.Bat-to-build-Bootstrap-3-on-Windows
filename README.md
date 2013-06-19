@@ -1,24 +1,13 @@
-Build Bootstrap 3 on Windows
+# Build Bootstrap 3 on Windows #
 
-Requires JSHint, Recess, and UglifyJS to be installed via Node.js's NPM.
+1. Install NodeJS: 
 
-## A) Install dependencies locally and build.
+	http://nodejs.org/download/
 
-Run this command after node.js is installed:
-
-	npm install less jshint recess uglify-js
-
-Then run:
-
-	make-local_npm.bat
-
-
-## B) Alternatively, install dependencies globally (-g) and build.
-
-Run this command after node.js is installed:
+2. Open a command prompt, navigate to the bootstrap folder and issue the following to grab the necessary dependencies (Less, JSHint, Recess, and UglifyJS):
 
 	npm install -g less jshint recess uglify-js
 
-Then run:
+3. Copy make.bat to the bootstrap directory and run it from the command line:
 
-	make-global_npm.bat
+	make.bat
