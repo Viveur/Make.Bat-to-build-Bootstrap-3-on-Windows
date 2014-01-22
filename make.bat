@@ -18,18 +18,18 @@ CALL lessc less\bootstrap.less > bootstrap\css\bootstrap.css
 CALL lessc -x less\bootstrap.less > bootstrap\css\bootstrap.min.css
 
 COPY /B ^
-js\affix.js+ ^
+js\transition.js+ ^
 js\alert.js+ ^
 js\button.js+ ^
 js\carousel.js+ ^
 js\collapse.js+ ^
 js\dropdown.js+ ^
 js\modal.js+ ^
+js\tooltip.js+ ^
 js\popover.js+ ^
 js\scrollspy.js+ ^
 js\tab.js+ ^
-js\tooltip.js+ ^
-js\transition.js bootstrap\js\bootstrap.js
+js\affix.js bootstrap\js\bootstrap.js
 
 CALL uglifyjs bootstrap\js\bootstrap.js > bootstrap\js\bootstrap.min.js
 
